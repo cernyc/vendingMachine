@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+
+	<VBox xmlns:fx="http://javafx.com/fxml" 
+	
+		fx:controller="application.MachineController2" alignment="center" spacing="10" >
+		<Label text="Coffee Machine"/>
+	
+	<Label fx:id= "machineStatus" text=""/>
+	
+    	<ImageView>
+      		<Image fx:id="image" url="@image.jpg" />
+   		</ImageView>
+
+	
+	<HBox alignment="center" spacing="60">
+	<Button  fx:id="payCard" text="Pay with badge" onAction="#payCard"/>
+	<Button  fx:id="payCash" text="Pay cash" onAction="#payCash"/>
+	</HBox>
+	
+	
+	<HBox alignment="center" spacing="10">
+	<Label text="insert your money : " />
+	<Label fx:id= "moneyStatus" text=""/>
+	</HBox>
+	
+	<HBox alignment="center" spacing="10">
+	
+	<Button  fx:id="fivec" text="5¢" onAction="#addMoney"/>
+	
+	<Button  fx:id="tenc" text="10¢" onAction="#addMoney"/>
+	
+	<Button  fx:id="twentyfivec" text="25¢" onAction="#addMoney"/>
+	</HBox>
+	
+	<HBox alignment="center" spacing="30">
+	<Button  fx:id="oned" text="1 dollar" onAction="#addMoney"/>
+	<Button  fx:id="fived" text="5 dollars" onAction="#addMoney"/>
+	</HBox>
+	
+	<Button  fx:id="swipeCard" text="Swipe badge" onAction="#chargeCard"/>
+	
+	<Label text="Please select how you want your coffee" />
+	
+	<HBox alignment="center" spacing="10">
+	<Button  fx:id="natural" text="Black Coffee" onAction="#makeCoffee"/>
+	<Button  fx:id="sugar" text="Coffee with sugar" onAction="#makeCoffee"/>
+	<Button  fx:id="cream" text="Coffee with cream" onAction="#makeCoffee"/>
+	<Button  fx:id="sugarCream" text="Coffee with sugar and cream" onAction="#makeCoffee"/>
+	</HBox>
+	<Button  fx:id="bouillon" text="Bouillon" onAction="#makeCoffee"/>
+		
+		<Label fx:id= "finish" text=""/>
+		
+		<Label fx:id= "moneyReturn" text=""/>
+		
+		<Button fx:id="refresh" text="Refresh Stock" onAction="#refreshStock"/>
+			
+</VBox>
+
+ 
